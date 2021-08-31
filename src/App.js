@@ -1,18 +1,20 @@
 // import logo from './logo.svg';
 import './css/App.css';
 import Navbar from './components/Navbar';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Container from './containers/main';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <About />
-      <Projects/>
-      <Contact/>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Route path="/about" component={Container} />
+        <Route path="/skills" component={Container} />
+        <Route path="/projects" component={Container} />
+        <Route path="/contact" component={Container} />
+      </div>
+    </Router>
   );
 }
 

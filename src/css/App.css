@@ -1,38 +1,70 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+
+  --ff-primary: 'Lato', sans-serif;;
+  --ff-secondary: 'Merriweather', serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+--clr-light: #ffffff;
+--clr-dark: #326273;
+--clr-offwhite: #eeeeee;
+--clr-accentone: #5c9ead;
+--clr-accenttwo: #e39774;
+
+
+}
+
+body{ 
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-offwhite);
+  font-family: var(--ff-primary);
+}
+
 .App {
   text-align: center;
+  font-family: var(--ff-primary);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portfolio__img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.contactimage {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+h3{
+  font-family: var(--ff-primary);
+}
+
+.aboutSection {
+  height: 50vh;
+  background-color: var(--clr-dark);
+}
+
+.skillSection {
+  height: 50vh;
+}
+
+.projectSection {
+  background-color: var(--clr-dark);
+}
+
+.contactSection {
+  height: 50vh;
 }
